@@ -1,5 +1,5 @@
-# 🔱 AEGIS-PROVENANCE
-### *Universal Reality Auditor — Multimodal Forensic Engine for AI-Generated Video Detection*
+# 🔱 SYNTHETIC VIDEO VERIFICATION ENGINE
+### *Multimodal Forensic Engine for AI-Generated Video Detection*
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white"/>

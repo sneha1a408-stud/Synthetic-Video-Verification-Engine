@@ -1,4 +1,4 @@
-# 🔱 SYNTHETIC VIDEO VERIFICATION ENGINE
+# SYNTHETIC VIDEO VERIFICATION ENGINE
 ### *Multimodal Forensic Engine for AI-Generated Video Detection*
 
 <p align="center">
@@ -15,7 +15,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 1. [What is AEGIS-PROVENANCE?](#-what-is-aegis-provenance)
 2. [Why This Matters](#-why-this-matters)
@@ -37,7 +37,7 @@
 
 ---
 
-## 🧠 What is AEGIS-PROVENANCE?
+## What is AEGIS-PROVENANCE?
 
 **AEGIS-PROVENANCE** is a research-grade, multimodal forensic engine designed to distinguish **real, camera-captured video** from **AI-generated or synthetically manipulated video** — without relying on any machine learning model that requires training data.
 
@@ -49,7 +49,7 @@ Think of it as a **lie detector for video** — running five simultaneous scient
 
 ---
 
-## 🌍 Why This Matters
+##  Why This Matters
 
 | Problem | Scale |
 |---|---|
@@ -62,7 +62,7 @@ AEGIS-PROVENANCE tackles the *hardest variant* of the problem: **compressed, re-
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -103,7 +103,7 @@ AEGIS-PROVENANCE tackles the *hardest variant* of the problem: **compressed, re-
 
 ---
 
-## 🔬 The Five Forensic Layers — Deep Dive
+## The Five Forensic Layers — Deep Dive
 
 Each layer is an **independent evidence generator**. No layer is blindly trusted. Each produces a **confidence value between 0.0 and 1.0**, where values closer to 1.0 suggest authenticity and values closer to 0.0 suggest synthetic generation.
 
@@ -111,7 +111,7 @@ Before diving into the layers, it helps to understand one formula used across mu
 
 ---
 
-### 📐 The Asymmetric Sigmoid Map (Shared Utility — Read First)
+### The Asymmetric Sigmoid Map (Shared Utility — Read First)
 
 A **sigmoid** is an S-shaped mathematical curve that maps any real number to a value between 0 and 1. It is used throughout the engine to convert raw forensic measurements (like a noise ratio or entropy value) into smooth, bounded probability-like scores.
 
@@ -511,7 +511,7 @@ If no AI signature is found, the layer returns a neutral `0.50` — it abstains.
 
 ---
 
-## ⚖️ Dempster-Shafer Evidence Fusion
+## Dempster-Shafer Evidence Fusion
 
 **Why not just average the five confidence scores?**
 
@@ -617,7 +617,7 @@ Say Layer 1 gives `0.85` (strong REAL signal) and Layer 2 gives `0.15` (strong F
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -631,7 +631,7 @@ Say Layer 1 gives `0.85` (strong REAL signal) and Layer 2 gives `0.15` (strong F
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -706,7 +706,7 @@ You should see: `All dependencies OK`
 
 ---
 
-## ▶️ Running the App
+## Running the App
 
 With your virtual environment **activated** and inside the project directory:
 
@@ -740,7 +740,7 @@ http://localhost:8501
 
 ---
 
-## 📊 Interpreting Results
+## Interpreting Results
 
 ### Final Probability Score
 
@@ -764,7 +764,7 @@ http://localhost:8501
 
 ---
 
-## ⚠️ Limitations & Known Edge Cases
+## Limitations & Known Edge Cases
 
 - **Heavy recompression**: Uploading real video to social platforms and re-downloading can degrade PRNU signals (Layer 2) beyond recovery. The engine is calibrated to tolerate moderate compression but may abstain on extreme cases.
 - **No face in frame**: If no face is detected throughout the video, Layer 1 abstains entirely, reducing overall discriminative power.
@@ -774,7 +774,7 @@ http://localhost:8501
 
 ---
 
-## 🚀 Future Roadmap
+## Future Roadmap
 
 - [ ] Temporal consistency analysis across frames (GAN flicker detection)
 - [ ] Audio-visual synchronization coherence check
@@ -786,15 +786,23 @@ http://localhost:8501
 
 ---
 
-## 👤 Author
+## Authors
 
 **Soumik Sinha**  
 B.Tech CSE, PES University, Bengaluru  
 [GitHub](https://github.com/SoumikSinha) · [LinkedIn](http://linkedin.com/in/soumik-sinha-928a21352)
 
+**Sneha Anil**
+B.Tech CSE, PES University, Bengaluru
+[GitHub](https://github.com/sneha1a408-stud) · [LinkedIn](https://www.linkedin.com/in/sneha-anil-7260703a9/)
+
+**Praneetha Sreedharala**
+B.Tech CSE AIML, PES University, Bengaluru
+[GitHub](https://github.com/PraneethaSreedharala) · [LinkedIn](https://www.linkedin.com/in/praneetha-sreedharala-317610380/)
+
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 

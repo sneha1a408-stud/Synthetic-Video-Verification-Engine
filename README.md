@@ -682,7 +682,7 @@ pip install -r requirements.txt
 ```
 
 <details>
-<summary>📋 Full dependency list (click to expand)</summary>
+<summary>Full dependency list (click to expand)</summary>
 
 ```
 streamlit>=1.28.0
@@ -793,10 +793,12 @@ B.Tech CSE, PES University, Bengaluru
 [GitHub](https://github.com/SoumikSinha) · [LinkedIn](http://linkedin.com/in/soumik-sinha-928a21352)
 
 **Sneha Anil**
+
 B.Tech CSE, PES University, Bengaluru
 [GitHub](https://github.com/sneha1a408-stud) · [LinkedIn](https://www.linkedin.com/in/sneha-anil-7260703a9/)
 
 **Praneetha Sreedharala**
+
 B.Tech CSE AIML, PES University, Bengaluru
 [GitHub](https://github.com/PraneethaSreedharala) · [LinkedIn](https://www.linkedin.com/in/praneetha-sreedharala-317610380/)
 
